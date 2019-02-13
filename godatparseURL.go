@@ -6,7 +6,7 @@ import (
 )
 
 var reSchemeRegex regexp.Regexp = *regexp.MustCompile("(?i)[a-z]+:\\/\\/")
-var reVersionRegex = *regexp.MustCompile("(?i)/^(dat:\\/\\/)?([^/]+)(\\+[^/]+)(.*)$/i")
+var reVersionRegex = *regexp.MustCompile("(?i)^(dat:\\/\\/)?([^/]+)(\\+[^/]+)(.*)$")
 
 type ParsedDatURL struct {
 	Protocol string
